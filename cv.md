@@ -2,7 +2,7 @@
 
 ## Contacts
 - livroklon@gmail.com
-- [Telegram](https://t.me/Myklon)
+- [_Telegram_](https://t.me/Myklon)
 
 ## Summary
 Interested in becoming a professional front-end developer
@@ -16,7 +16,7 @@ Interested in becoming a professional front-end developer
 ## Projects
 
 ## Education
-Bogdan Khmelnitsky Melitopol State Pedagogical Universit
+_Bogdan Khmelnitsky Melitopol State Pedagogical Universit_
 
 ## English
 Pre-Intermediate
