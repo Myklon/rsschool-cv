@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: Verdana;
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 32px;
+  padding: 20px 0 0 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  margin: 20px auto;
+  width: 60%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+aside {
+  padding: 20px;
+  width: 20%;
+  min-width: 300px;
+  color: #fff;
+  background-color: #7c5651;
+}
+
+.contact,
+.skills,
+.english,
+.summary,
+.code,
+.education {
+  padding: 5px 20px;
+}
+
+figure {
+  margin: 20px 10px;
+  padding-left: 30px;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 60%;
+}
+
+article {
+  width: 80%;
+  min-width: 400px;
+  color: #1f2c43;
+}
+
+.education li {
+  padding: 5px 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px auto;
+}
