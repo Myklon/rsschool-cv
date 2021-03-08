@@ -16,7 +16,7 @@ Interested in becoming a professional front-end developer
 ## Projects
 
 ## Education
-_Bogdan Khmelnitsky Melitopol State Pedagogical Universit_
+_Bogdan Khmelnitsky Melitopol State Pedagogical University_
 
 ## English
 Pre-Intermediate
