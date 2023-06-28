@@ -13,8 +13,7 @@ I am 23 years old. A novice backend developer who wants to improve his knowledge
 * Yii2
 * Laravel
 * Git
-* HTML
-* CSS
+* HTML, CSS
 * JavaScript (Basic)
 
 ## Code:
