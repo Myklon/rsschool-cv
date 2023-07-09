@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-me" class="nav-link">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#code" class="nav-link">Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#graduation" class="nav-link">Graduation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#languages" class="nav-link">Languages</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <h1>Illarionov Nikita</h1>
+            <img src="images/avatar.jpg" alt="avatar" class="avatar">
+            <h2 id="contacts">Contacts</h2>
+            <ul>
+                <li>Email - livroklon@gmail.com</li>
+                <li>Telegram - https://t.me/Myklon</li>
+                <li>Github - https://github.com/Myklon</li>
+            </ul>
+            <h2 id="about-me">About me</h2>
+            <p>I am 23 years old. A novice backend developer who wants to improve his knowledge of frontend</p>
+            <h2 id="skills">Skills</h2>
+            <ul>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Yii2</li>
+                <li>Laravel</li>
+                <li>Git</li>
+                <li>HTML, CSS</li>
+                <li>JavaScript (Basic)</li>
+            </ul>
+            <h2 id="code">Code</h2>
+            <p>Problem: You are given a 0-indexed integer array tasks, where tasks[i] represents the difficulty level of
+                a task. In each round, you can complete either 2 or 3 tasks of the same difficulty level. </p>
+            <p>Return the minimum rounds required to complete all the tasks, or -1 if it is not possible to complete all
+                the tasks.</p>
+            <pre>
+class Solution {
+
+    /**
+        * @param Integer[] $tasks
+        * @return Integer
+        */
+        
+    function minimumRounds($tasks) {
+        $hashArray = [];
+        $steps = 0;
+        
+        foreach ($tasks as $value)
+            array_key_exists($value, $hashArray) ? $hashArray[$value]++ : $hashArray[$value] = 1;
+        
+        if (in_array(1,$hashArray)) return -1;
+
+        foreach ($hashArray as $key => $value)
+        {
+            $value % 3 == 0 ? $steps += $value / 3 : $steps += (int)($value / 3) + 1;
+        }
+        
+        return $steps;
+    }
+}
+            </pre>
+            <h2 id="graduation">Graduation</h2>
+            <p><i>In progress...</i></p>
+            <h2 id="languages">Languages</h2>
+            <ul>
+                <li>Russian - Native</li>
+                <li>English - Intermediate</li>
+            </ul>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-list">
+            <div>
+                <a href="https://github.com/myklon" target="_blank">Myklon</a>
+            </div>
+            <div>2023</div>
+            <div>
+                <a href="https://rs.school/js/" target="_blank"><img class="footer-logo" src="images/rs_school_logo.svg"
+                        alt="rs logo"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
