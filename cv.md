@@ -1,13 +1,17 @@
 # Illarionov Nikita
-## Contacts: 
-  * E-mail - livroklon@gmail.com
-  * Telegram - [@Myklon](https://t.me/Myklon);
-  * GitHub - [Myklon](https://github.com/Myklon);
 
-## About me:
+## Contacts
+
+* E-mail - <livroklon@gmail.com>
+* Telegram - [@Myklon](https://t.me/Myklon);
+* GitHub - [Myklon](https://github.com/Myklon);
+
+## About me
+
 I am 23 years old. A novice backend developer who wants to improve his knowledge of frontend
 
-## Skills:
+## Skills
+
 * PHP
 * MySQL
 * Yii2
@@ -16,12 +20,12 @@ I am 23 years old. A novice backend developer who wants to improve his knowledge
 * HTML, CSS
 * JavaScript (Basic)
 
-## Code:
+## Code
+>
 > Problem: You are given a 0-indexed integer array tasks, where tasks[i] represents the difficulty level of a task. In each round, you can complete either 2 or 3 tasks of the same difficulty level.
 Return the minimum rounds required to complete all the tasks, or -1 if it is not possible to complete all the tasks.
 
-```
-#PHP
+```php
 
 class Solution {
 
@@ -49,9 +53,11 @@ class Solution {
 }
 ```
 
-## Graduation:
+## Graduation
+
 *In progress*;
 
-## Languages:
+## Languages
+
 * Russian - Native
 * English - Intermediate
