@@ -1,10 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <nav class="nav">
+                <ul class="nav-list">
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Illarionov Nikita</h1>
+            <h2>Contacts</h2>
+            <ul>
+                <li>Email - livroklon@gmail.com</li>
+                <li>Telegram - https://t.me/Myklon</li>
+                <li>Github - https://github.com/Myklon</li>
+            </ul>
+            <h2>About me</h2>
+            <p>I am 23 years old. A novice backend developer who wants to improve his knowledge of frontend</p>
+            <h2>Skills</h2>
+            <ul>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Yii2</li>
+                <li>Laravel</li>
+                <li>Git</li>
+                <li>HTML, CSS</li>
+                <li>JavaScript (Basic)</li>
+            </ul>
+            <h2>Code</h2>
+            <p>Problem: You are given a 0-indexed integer array tasks, where tasks[i] represents the difficulty level of a task. In each round, you can complete either 2 or 3 tasks of the same difficulty level. </p>
+            <p>Return the minimum rounds required to complete all the tasks, or -1 if it is not possible to complete all the tasks.</p>
+            <pre>
+                class Solution {
+
+                    /**
+                     * @param Integer[] $tasks
+                     * @return Integer
+                     */
+                     
+                    function minimumRounds($tasks) {
+                        $hashArray = [];
+                        $steps = 0;
+                        
+                        foreach ($tasks as $value)
+                            array_key_exists($value, $hashArray) ? $hashArray[$value]++ : $hashArray[$value] = 1;
+                        
+                        if (in_array(1,$hashArray)) return -1;
+                
+                        foreach ($hashArray as $key => $value)
+                        {
+                            $value % 3 == 0 ? $steps += $value / 3 : $steps += (int)($value / 3) + 1;
+                        }
+                        
+                        return $steps;
+                    }
+                }
+            </pre>
+            <h2>Graduation</h2>
+            <p><i>In progress...</i></p>
+            <h2>Languages</h2>
+            <ul>
+                <li>Russian - Native</li>
+                <li>English - Intermediate</li>
+            </ul>
+        </main>
+    </div>
+    <footer class="footer">Ssfsf</footer>
 </body>
 </html>
